@@ -1,0 +1,13 @@
+{
+  "code-runner.cwd": "/Users/zhouxiang/Documents/dev/my/fn",
+  "code-runner.executorMapByGlob": {
+    "*.test.js": "npx mocha $fullFileName",
+    "*.js": "node --experimental-specifier-resolution=node $fullFileName",
+    "*.ts": "npx node --experimental-specifier-resolution=node --loader ts-node/esm  $fullFileName",
+  },
+  "code-runner.runInTerminal": true,
+  "path-autocomplete.pathMappings": {
+    "#": "${folder}", // alias for /test
+  },
+  "path-autocomplete.extensionOnImport": false,
+}

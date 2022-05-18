@@ -1,0 +1,53 @@
+// 通用颜色规范。
+@primary: #3399ff;
+@success: #00cc66;
+@warning: #ff9900;
+@error: #ff4400;
+@other: #db3fd5;
+@dark: #464c5b;
+@normal: #657180;
+@light: #9ea7b4;
+@disabled: #c3cbd6;
+@border: #d7dde4;
+@divider: #e3e8ee;
+@bg: #f3f7ff;
+@white: #fff;
+@disabled-light: #f7f7f7;
+@success-light: rgba(0, 204, 102, 0.1);
+@warning-light: rgba(255, 153, 0, 0.1);
+@primary-light: rgba(51, 153, 255, 0.1);
+@error-light: rgba(255, 68,0, 0.1);
+
+// 字体大小。
+@font-size-sm: 12px;
+@font-size-normal: 14px;
+@font-size-lg: 16px;
+
+// 圆角大小。
+@rounded-sm: 4px;
+@rounded-base: 8px;
+@rounded-lg: 16px;
+@rounded-full: 9999px;
+
+// 这里一定要导出颜色以便和js共享。
+/* stylelint-disable */
+:export {
+  primary: @primary;
+  success: @success;
+  warning: @warning;
+  error: @error;
+  other: @other;
+  dark: @dark;
+  normal: @normal;
+  light: @light;
+  disabled: @disabled;
+  border: @border;
+  divider: @divider;
+  bg: @bg;
+  white: @white;
+  primary-light: @primary-light;
+  error-light: @error-light;
+  disabled-light: @disabled-light;
+  success-light: @success-light;
+  warning-light: @warning-light;
+}

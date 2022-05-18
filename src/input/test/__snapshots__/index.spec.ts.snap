@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render input 1`] = `
+"<input class=\\"zx-input dd1\\">
+<div class=\\"zx-common\\"> 公用组件 </div>"
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should contains some className 1`] = `
+"<button class=\\"zx-button--primary zx-button--small\\">默认按钮</button>
+<!-- <Common></Common> -->
+<!-- <img :src=\\"Echarts\\"> -->"
+`;
+
+exports[`Button should contains some text 1`] = `
+"<button class=\\"zx-button--default zx-button--normal\\">my-button</button>
+<!-- <Common></Common> -->
+<!-- <img :src=\\"Echarts\\"> -->"
+`;
+
+exports[`Button should match original snapshoot 1`] = `
+"<button class=\\"zx-button--default zx-button--normal\\">默认按钮</button>
+<!-- <Common></Common> -->
+<!-- <img :src=\\"Echarts\\"> -->"
+`;
