@@ -14,7 +14,8 @@
     "build:cjs": "rimraf dist/cjs && cross-env FORMAT=cjs  node --experimental-specifier-resolution=node --loader ts-node/esm build/build.ts",
     "test": "jest --coverage",
     "lint:staged": "lint-staged",
-    "lint": "eslint --fix"
+    "stylelint": "stylelint src/**/*.{less,vue} --fix",
+    "eslint": "eslint --ext .jsx,.js,.vue,.ts,.tsx src --fix"
   },
   "exports": {
     ".": {

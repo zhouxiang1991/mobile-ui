@@ -2,6 +2,7 @@ import { Bem } from '../Bem'
 
 test('Bem', () => {
   const bem = new Bem('comp-name')
+
   expect(bem.gen()).toBe('zx-comp-name')
   expect(bem.gen({ modifier: 'abc' })).toBe('zx-comp-name--abc')
   expect(bem.gen({ modifier: 'abc', block: 'ddd' })).toBe('zx-comp-name__ddd--abc')

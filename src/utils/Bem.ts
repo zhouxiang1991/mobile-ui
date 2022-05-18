@@ -2,7 +2,9 @@ const COMPONENT_PREFIX = 'zx'
 const HYPHEN = '-' /** 连字符。 */
 const HYPHEN_BLOCK = '__' /** 块连字符。 */
 const HYPHEN_MODIFIER = '--' /** 修饰连字符。 */
+
 type Modifier = Record<string, boolean> | string
+
 export class Bem {
   constructor (public compName: string) {}
 
@@ -15,7 +17,7 @@ export class Bem {
       HYPHEN,
       this.compName,
       block && HYPHEN_BLOCK,
-      block
+      block,
     ].join('')
 
     if (typeof modifier === 'string') {
@@ -27,6 +29,7 @@ export class Bem {
         if (modifier[key]) {
           sum += `${[baseBem, key].join(HYPHEN_MODIFIER)} `
         }
+
         return sum
       }, '').trim()
     } else {

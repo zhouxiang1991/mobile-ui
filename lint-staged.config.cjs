@@ -1,10 +1,8 @@
 module.exports = {
-  '*.{.ts,.tsx,.vue}': [
+  '*.{ts,tsx,vue}': [
     'eslint --fix',
-    'git add',
   ],
-  '*.{.css,.less,.vue}': [
+  '*.{css,less,vue}': [
     'stylelint --fix',
-    'git add',
   ],
 }

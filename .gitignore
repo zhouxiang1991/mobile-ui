@@ -3,6 +3,8 @@ node_modules
 /dist
 .nvmrc
 coverage
+dev/bundle.js
+dev/assets
 
 # local env files
 .env.local

@@ -24,6 +24,7 @@ export default {
 @name: zx-input;
 .@{name} {
   border: 1px solid red;
+
   .dd {
     color: red;
   }

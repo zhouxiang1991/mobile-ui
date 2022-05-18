@@ -8,6 +8,9 @@ module.exports = {
     node                       : true,
     'vue/setup-compiler-macros': true,
   },
+  globals: {
+    VERSION: 'readonly',
+  },
   extends: [
     '@vue/standard',
     'plugin:vue/vue3-strongly-recommended',
@@ -20,8 +23,14 @@ module.exports = {
   },
   rules: {
     /**
+     * jsdoc规则。
+     */
+    'jsdoc/require-returns-type'              : ['off'],
+    'jsdoc/require-param-type'                : ['off'],
+    /**
      * ts相关规则。
      */
+    '@typescript-eslint/no-unused-vars'       : ['error'],
     '@typescript-eslint/no-non-null-assertion': ['off'],
     /**
      * vue相关的规则
@@ -642,7 +651,7 @@ module.exports = {
     'no-restricted-modules': ['off'], // 禁止 Node.js 模块
     'no-sync'              : ['off'], // 禁止使用同步方法
     'no-unused-vars'       : [
-      'error',
+      'off',
       {
         vars              : 'all',
         args              : 'none',
